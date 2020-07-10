@@ -1,8 +1,18 @@
- const express = require('express');
- const server = express();
+const express = require('express');
+const nunjucks = require('nunjucks')
+
+const server = express()
+
+server.set("view engine", "html")
+
+server.use(express.static('public'))
+
+nunjucks.configure("views", {
+    express:server
+})
 
 server.get("/", function(req, res) {
-    return res.send("Server is running")
+    return res.render("index")
 })
 
 server.listen("5000", function(){
