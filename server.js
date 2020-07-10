@@ -12,7 +12,15 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res) {
-    return res.render("layout")
+    return res.render("mainPage")
+})
+
+server.get("/about", function(req, res) {
+    return res.render("aboutPage")
+})
+
+server.get("/recipes", function(req, res) {
+    return res.render("recipesPage")
 })
 
 server.listen("5000", function(){
