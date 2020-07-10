@@ -8,11 +8,11 @@ server.set("view engine", "html")
 server.use(express.static('public'))
 
 nunjucks.configure("views", {
-    express:server
+    express: server
 })
 
 server.get("/", function(req, res) {
-    return res.render("index")
+    return res.render("layout")
 })
 
 server.listen("5000", function(){
