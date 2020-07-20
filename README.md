@@ -1,2 +1,2 @@
-# personalSite
- Personal website created in the Rocketseat Launchbase course.
+# Foodfy
+ Foodfy website created in the Rocketseat Launchbase course.
