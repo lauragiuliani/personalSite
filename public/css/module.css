@@ -1,8 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-header {
-    background-color: rebeccapurple;
+header {width: 100%;}
+
+ul {list-style-type: none;}
+
+.mainHeader{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    margin: 2% 0 2% 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo a, img{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 80%;
+}
+
+.menu ul a {
+    text-decoration: none;
+    font: 400 13px/23px 'Roboto', sans-serif;
+    color: black;
+}
+
+.menu ul li + li {
+    margin-left: 3%;
+}
+
+.menu ul, li{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
