@@ -1,0 +1,17 @@
+body, html{
+    width: 100%;
+    font-family: 'Roboto', sans-serif
+}
+
+.banner {
+    display: flex;
+    justify-content: center
+}
+
+.gridContent{
+    background-color: #FBDFDB;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 30px 
+}
