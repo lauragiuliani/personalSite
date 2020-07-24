@@ -1,11 +1,11 @@
 body, html{
     width: 100%;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 .banner {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .gridContent{
@@ -13,5 +13,26 @@ body, html{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 30px 
+    border-radius: 30px;
 }
+
+.recipesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.recipes {margin: 3% 10%;}
+
+.item {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title {margin-bottom: 2%;}
+
