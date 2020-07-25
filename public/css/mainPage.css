@@ -10,8 +10,27 @@ body, html{
 
 .gridContent{
     background-color: #FBDFDB;
-    width: 80%;
+    width: 70%;
+    height: 55vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 30px 
 }
+
+.gridText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vh;
+}
+
+.gridText h1 {font: bold 25px/35px 'Roboto', sans-serif;}
+
+.gridText p {
+    font: normal 13px/23px 'Roboto', sans-serif;
+    opacity: 70%;
+}
+
+.gridImg{padding: 4.5vw 0 0 7vw;}
+
+.gridImg img {height: 46vh;}
