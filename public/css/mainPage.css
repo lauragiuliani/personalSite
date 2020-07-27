@@ -1,11 +1,11 @@
 body, html{
     width: 100%;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 .banner {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .gridContent{
