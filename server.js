@@ -7,20 +7,20 @@ server.set("view engine", "njk")
 
 server.use(express.static('public'))
 
-nunjucks.configure("views", {
+nunjucks.configure("pages", {
     express: server
 })
 
 server.get("/", function(req, res) {
-    return res.render("mainPage")
+    return res.render('Landing')
 })
 
 server.get("/about", function(req, res) {
-    return res.render("aboutPage")
+    return res.render('About')
 })
 
 server.get("/recipes", function(req, res) {
-    return res.render("recipesPage")
+    return res.render('Recipes')
 })
 
 server.listen("5000", function(){

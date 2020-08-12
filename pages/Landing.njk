@@ -1,0 +1,54 @@
+{% extends "Module.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/Landing.css">
+{% endblock %}
+
+{% block content %}
+    <div id="page-landing">
+        <section class="banner-content">
+            <div class="banner-grid">
+                <div class="grid-text">
+                    <h1>As melhores receitas</h1>
+                    <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+                </div>
+                <div class="grid-img"><img src="assets/images/chef.png" alt=""></div>       
+            </div>
+        </section>
+        <section class="recipes-content">
+            <h1>Mais acessadas</h1>
+            <div class="recipes-grid">
+                <div class="grid-item">
+                    <img src="assets/images/burger.png" alt="">
+                    <p class= "recipe-title">Nome Receita</p>
+                    <p class= "recipe-author">por "Autor"</p>      
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/pizza.png" alt="">
+                    <p class= "recipe-title">Nome Receita</p>
+                    <p class= "recipe-author">por "Autor"</p>                 
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/espaguete.png" alt="">
+                    <p class= "recipe-title">Nome Receita</p>
+                    <p class= "recipe-author">por "Autor"</p>  
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/lasanha.png" alt="">
+                    <p class= "recipe-title">Nome Receita</p>
+                    <p class= "recipe-author">por "Autor"</p>   
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/doce.png" alt="">
+                    <p class= "recipe-title">Nome Receita</p>
+                    <p class= "recipe-author">por "Autor"</p>   
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/asinhas.png" alt="">
+                    <p class= "recipe-title">Nome Receita</p>
+                    <p class= "recipe-author">por "Autor"</p>   
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

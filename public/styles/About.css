@@ -1,0 +1,8 @@
+#page-about { padding: 0 15%; }
+
+#page-about .text p {
+    margin: 3% 0;
+    text-align:justify;
+    opacity: 80%;
+    font-size: 14px;
+}

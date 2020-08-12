@@ -1,0 +1,76 @@
+{% extends "Module.njk" %}
+
+{% block head %}
+    <title>Receitas</title>
+    <link rel="stylesheet" href="/styles/Recipes.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div id="page-recipes">
+    <section class="recipes-content">
+        <h1>Mais acessadas</h1>
+        <div class="recipes-grid">
+            <div class="grid-item">
+                <img src="assets/images/burger.png" alt="">
+                <p class= "recipe-title">Nome Receita</p>
+                <p class= "recipe-author">por "Autor"</p>      
+            </div>
+            <div class="grid-item">
+                <img src="assets/images/pizza.png" alt="">
+                <p class= "recipe-title">Nome Receita</p>
+                <p class= "recipe-author">por "Autor"</p>                 
+            </div>
+            <div class="grid-item">
+                <img src="assets/images/espaguete.png" alt="">
+                <p class= "recipe-title">Nome Receita</p>
+                <p class= "recipe-author">por "Autor"</p>  
+                </div>
+            <div class="grid-item">
+                <img src="assets/images/lasanha.png" alt="">
+                <p class= "recipe-title">Nome Receita</p>
+                <p class= "recipe-author">por "Autor"</p>   
+            </div>
+                <div class="grid-item">
+                <img src="assets/images/doce.png" alt="">
+                <p class= "recipe-title">Nome Receita</p>
+                <p class= "recipe-author">por "Autor"</p>   
+            </div>
+            <div class="grid-item">
+                <img src="assets/images/asinhas.png" alt="">
+                <p class= "recipe-title">Nome Receita</p>
+                <p class= "recipe-author">por "Autor"</p>   
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const items = document.querySelectorAll('.grid-item');
+
+    for (let item of items) {
+        item.addEventListener('click', function() {
+            modalOverlay.classList.add('active')
+        })
+    }
+
+    document.querySelector('.close-modal').addEventListener('click', function() {
+        modalOverlay.classList.remove('active')
+    });
+
+</script>
+
+
+{% endblock %}

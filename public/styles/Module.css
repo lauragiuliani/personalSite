@@ -15,35 +15,35 @@ header {width: 100%;}
 
 ul {list-style-type: none;}
 
-.mainHeader{
+.page-header{
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     margin: 2% 0 2% 0;
 }
 
-.logo {
+.page-header .logo {
     display: flex;
     justify-content: center;
 }
 
-.logo a {margin-left: 35%;}
+.page-header .logo a {margin-left: 35%;}
 
-.logo a, img{
+.page-header .logo a, img{
     display: flex;
     align-items: center;
 }
 
-.logo img {width: 80%;}
+.page-header .logo img {width: 80%;}
 
-.menu ul a {
+.page-header .menu ul a {
     text-decoration: none;
     font: 400 13px/23px 'Roboto', sans-serif;
     color: black;
 }
 
-.menu ul li + li {margin-left: 3%;}
+.page-header .menu ul li + li {margin-left: 3%;}
 
-.menu ul, li{
+.page-header .menu ul, li{
     display: flex;
     align-items: center;
     height: 100%;
@@ -53,14 +53,14 @@ ul {list-style-type: none;}
 
 footer {width: 100%;}
  
-.footer {
+.page-footer {
     height: 10vh;
     background-color:#EEEEEE;   
 }
 
-.footer p, .footer a {color: #999999;}
+.page-footer p, .page-footer a {color: #999999;}
 
-.footerContent {
+.footer-content {
     height: 100%;
     display: flex;
     justify-content: center;
