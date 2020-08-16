@@ -41,7 +41,10 @@
     gap:20px;
 }
 
-#page-landing .recipes-content {margin: 3% 15%;}
+#page-landing .recipes-content {
+    margin: 3% 0;
+    padding: 0 15%;
+}
 
 #page-landing .grid-item {
     box-sizing: border-box;
@@ -49,9 +52,10 @@
 }
 
 #page-landing .grid-item img {
-    width: 100%;
+    width:100%;
     border-radius: 15px;
     margin-bottom: 10px;
+    height: 7.6rem;
 }
 
 #page-landing .recipe-author {

@@ -1,6 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks')
-
+const recipes = require('./data')
 const server = express()
 
 server.set("view engine", "njk")
@@ -12,7 +12,7 @@ nunjucks.configure("pages", {
 })
 
 server.get("/", function(req, res) {
-    return res.render('Landing')
+    return res.render('Landing', { items: recipes })
 })
 
 server.get("/about", function(req, res) {
@@ -20,9 +20,9 @@ server.get("/about", function(req, res) {
 })
 
 server.get("/recipes", function(req, res) {
-    return res.render('Recipes')
+    return res.render('Recipes', { items: recipes })
 })
 
 server.listen("5000", function(){
     console.log("server is running")
- })
+})
