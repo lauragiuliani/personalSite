@@ -18,11 +18,11 @@
         <section class="recipes-content">
             <h1>Mais acessadas</h1>
             <div class="recipes-grid">
-                {% for item in items %}
+                {% for recipe in recipes %}
                     <div class="grid-item">
-                        <img src='{{item.image}}' alt="">
-                        <p class= "recipe-title">{{item.title}}</p>
-                        <p class= "recipe-author">{{item.author}}</p>      
+                        <img src='{{recipe.image}}' style="background: url({{ recipe.image}}) no-repeat center center / cover">
+                        <p class= "recipe-title">{{recipe.title}}</p>
+                        <p class= "recipe-author">{{recipe.author}}</p>      
                     </div>
                 {% endfor%}
             </div>

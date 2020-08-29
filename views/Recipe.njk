@@ -1,0 +1,44 @@
+{% extends "Module.njk" %}
+
+{% block head %}
+    <title>{{ recipe.title }}</title>
+    <link href="/styles/Recipe.css" rel="stylesheet">
+{% endblock%}
+
+{% block content %}
+
+    <section id="recipe">
+        <div class="recipe">
+            <div class="bannerImage" style="background: url({{ recipe.image}}) no-repeat center center / cover">
+            </div>
+
+            <div class="title">
+                <h2>{{ recipe.title }}</h2>
+                <h4>{{ recipe.author }}</h4>
+            </div>
+
+               <h3>Ingredientes</h3><a class="ingredientsB">Esconder</a>
+            <div class="ingredients">
+                {% for ingredient in recipe.ingredients %}
+                <li>{{ ingredient }}</li>
+                {% endfor %}
+            </div>
+
+            <div class="preparation">
+                <h3>Modo de preparo</h3>
+                {% for prep in recipe.preparation %}
+                <li>{{ prep }}</li>
+                {% endfor %}
+                
+            </div>
+
+            <div class="additonalInfo">
+                <h3>Informações Adcionais</h3>
+                <p>{{ recipe.information }} </p> </div>
+        </div>
+
+    <script src="/scripts/script.js"></script>
+
+    </section>
+
+{% endblock%}

@@ -1,0 +1,47 @@
+.bannerImage {
+    width: 940px;
+    height: 280px;  
+    margin: 50px auto;
+    border-radius: 15px;
+}
+
+#recipe ul { list-style: none; }
+
+#recipe li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#recipe h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: #111;
+    line-height: 28px;
+}
+
+#recipe p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.title { text-align: center; }
+
+.title h2{
+    font-weight: 700;
+    color: #111;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+
+.title h4{
+    margin-top: 0;
+    font-weight: 400;
+    color: #777;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.ingredients { display: none; }

@@ -1,28 +1,18 @@
-const express = require('express');
+const express = require('express')
 const nunjucks = require('nunjucks')
-const recipes = require('./data')
-const server = express()
+const routes = require('./routes')
+const server = express();
 
-server.set("view engine", "njk")
+server.set('view engine', 'njk');
+server.use(express.static('public'));
+server.use(routes);
 
-server.use(express.static('public'))
+nunjucks.configure('views', {
+    express: server,
+    autoescape: false,
+    noCache: true
+});
 
-nunjucks.configure("pages", {
-    express: server
-})
-
-server.get("/", function(req, res) {
-    return res.render('Landing', { items: recipes })
-})
-
-server.get("/about", function(req, res) {
-    return res.render('About')
-})
-
-server.get("/recipes", function(req, res) {
-    return res.render('Recipes', { items: recipes })
-})
-
-server.listen("5000", function(){
-    console.log("server is running")
+server.listen('5000', function(){
+    console.log('server is running');
 })
